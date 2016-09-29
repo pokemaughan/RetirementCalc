@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="retCalc.js" defer></script>
+		<link rel = "stylesheet" type = "text/css" href = "styles.css"/>
+	</head>
+	<body background="back1.jpg">
+		<div style = "text-align: center;">
+		<h1> Projections</h1>
+		<div class="input">
+			<div   class="label">Years to retirement: </div>
+			<input class="numberinput" type="number" id="years">
+		</div>
+
+		<div class="input">
+			<div class="label">Return on investment (choose 7%, 8%, 9%, or 10%): </div>
+			<input class="numberinput" type="number" id="return">
+		</div>
+
+		<div class="input">
+			<div class="label">Inflation rate (chose 2%, 3%, 4%, or 5%): </div>
+			<input class="numberinput" type="number" id="inflation">
+		</div>
+
+		<div class="calculated">
+			<div class="label">Savings growth rate: </div>
+			<div class="value" id="growthrate"> 32 </div>
+		</div>
+
+
+		<div class="calculated">
+			<div class="label">Value of $1 growing at <div class="valueinline" id="growthrate">__%</div>
+		 		for <div class="valueinline" id="years2retire">__</div> years : </div>
+			<div class="value" id="savedgrowthrate">45</div> 
+		</div>
+
+		<div class="calculated">
+			<div class="label">Value of $1 deposited each month growing at 
+				<div class="valueinline" id="growthrate">__%</div>
+				for <div class="valueinline" id="years2retire">__</div> years : </div>
+			<div class="value" id="monthlySavingGrowthRate">45</div> 
+		</div>
+
+		<h2> Guesses </h2> 
+
+		<div class="input">
+			<div class="label">Gross monthly income: </div>
+			<input class="numberinput" type="number" id="monthlyIncome" >
+		</div>
+
+		<div class="input">
+			<div class="label">Savings per month: </div>
+			<input class="numberinput" type="number" id="monthlySavings">
+		</div>
+
+		<div class="input">
+			<div class="label">Amount in retirement accounts today: </div>
+			<input class="numberinput" type="number" id="savedNow" >
+		</div>
+
+		<h2>Total Retirement accounts on the day you retire</h2> 
+
+		<div class="calculated">
+			<div class="label">Amount in your old savings plan pile</div>
+			<div class="value" id="futureValueSaved">45</div> 
+		</div>
+
+		<div class="calculated">
+			<div class="label">Amount in your new savings plan pile</div>
+			<div class="value" id="futureValueMonthlyContribs">45</div> 
+		</div>
+
+		<div class="calculated">
+			<div class="label">Amount in both</div>
+			<div class="value" id="futureValueEverything">45</div> 
+		</div>
+
+		<div class="input">
+			<div class="label">Social Security amount:</div>
+			<input class="numberinput" type="number" id="socialsec" >
+		</div>
+
+		<div class="calculated">
+			<div class="label">Monthly withdrawal from savings (saved amount diviged by 300)</div>
+			<div class="value" id="monthlyFromSavings">45</div> 
+		</div>
+
+		<div class="calculated">
+			<div class="label">Total Monthly income</div>
+			<div class="value" id="monthlyTotal">45</div> 
+		</div>
+
+		<h2>Reality Check</h2> 
+
+		<div class="calculated">
+			<div class="label">Monthly expenses in retirement assuming you are no longer saving for retirement</div>
+			<div class="value" id="monthlyExpenses">45</div> 
+		</div>
+
+		<div class="calculated">
+			<div class="label">Difference between what you've saved and what you'll spend</div>
+			<div class="value" id="differenceField">45</div> 
+		</div>
+
+		<button class = "button"> Calculate</button> 
+		</div>
+	</body>
+</html>

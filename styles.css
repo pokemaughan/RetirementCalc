@@ -1,0 +1,82 @@
+#title{
+    color: white;
+    text-align: center;
+    font-size: 300%;
+    font-weight:bold;
+}
+
+.center{
+    text-align: center;
+}
+
+.button{
+    border-radius: 12px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin:4px 2px;
+    border: 2px solid #e7e7e7;
+    background-color:   lightblue;
+    -webkit-transition-duration:0.4s;
+    cursor:pointer;
+}
+
+.button:hover{
+    background-color: lightgreen;
+}
+
+input[type=number]{
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid pink;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    font-weight: bold;
+}
+
+input[type=number]:focus {
+    width: 40%;
+}
+h1,h2{
+    color: white;
+    text-align: center;
+    font-size: 300%;
+    font-weight:bold;
+}
+
+.input { 
+    color: red;
+    font-weight: bold;
+    font-size: 150%;
+}
+.input > .label { 
+    color:lightgray; 
+   
+}
+
+.calculated { 
+    color: gray;
+    font-weight: bold;
+    font-size: 150%;
+}
+.calculated > .label { 
+    color: lightgray;
+   
+}
+.calculated > .value { 
+    color: pink; 
+}
+
+
+.valueinline { 
+    color:red; 
+    display:inline; 
+    font-weight: bold;
+    font-size: 150%;
+}
